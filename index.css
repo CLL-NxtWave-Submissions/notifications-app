@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.notifications-bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifications-header {
+  font-family: "Roboto";
+  font-size: 1.7rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.notification-collection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 60vw;
+  margin-bottom: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.notification-image {
+  height: 0.9rem;
+  width: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.notification-text {
+  font-family: "Roboto";
+  font-size: 0.7rem;
+  color: #ffffff;
+}
+
+.information-message {
+  background-color: #0b69ff;
+}
+
+.success-message {
+  background-color: #2dca73;
+}
+
+.warning-message {
+  background-color: #ffb800;
+}
+
+.error-message {
+  background-color: #ff0b37;
+}
+
+@media (min-width: 768px) {
+  .notifications-header {
+    font-size: 2.5rem;
+  }
+
+  .notification-item {
+    max-width: 30rem;
+  }
+
+  .notification-image {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+
+  .notification-text {
+    font-size: 1rem;
+  }
+}
